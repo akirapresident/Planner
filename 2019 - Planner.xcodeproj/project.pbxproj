@@ -149,6 +149,7 @@
 		FB338E5D22B2B7480087545A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FB338E6322B2C9960087545A /* Eventos.swift */,
 				FB338E6122B2BD720087545A /* EventosPaiTableViewController.swift */,
 				FB338E2E22B2AD080087545A /* ViewController.swift */,
 			);
@@ -158,7 +159,6 @@
 		FB338E5E22B2B7930087545A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FB338E6322B2C9960087545A /* Eventos.swift */,
 				FB338E6522B2D1FC0087545A /* Model.swift */,
 			);
 			path = Model;

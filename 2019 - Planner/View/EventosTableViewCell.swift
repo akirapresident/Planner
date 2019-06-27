@@ -14,6 +14,7 @@ class EventosTableViewCell: UITableViewCell {
     
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var eventNameLbl: UILabel!
+    @IBOutlet weak var progressView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -24,7 +24,6 @@ class AddCellTableViewCell: UITableViewCell, UITextFieldDelegate {
     @IBAction func addName(_ sender: Any) {
         if !nameTextField.hasText { return }
         delegate?.addEvent(nome: nameTextField.text!)
-        delegate?.updateDataSource()
         delegate?.tableView.reloadData()
         nameTextField.text = ""
     }
