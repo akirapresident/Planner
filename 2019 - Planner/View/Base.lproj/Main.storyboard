@@ -46,7 +46,11 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6y-D6-oOI">
-                                                            <rect key="frame" x="0.0" y="70" width="394" height="30"/>
+                                                            <rect key="frame" x="0.0" y="80" width="394" height="20"/>
+                                                            <color key="backgroundColor" red="0.99410844840000001" green="0.26865905509999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </view>
+                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cfe-Xc-31M">
+                                                            <rect key="frame" x="0.0" y="80" width="19.5" height="10"/>
                                                             <color key="backgroundColor" red="0.99410844840000001" green="0.26865905509999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </view>
                                                     </subviews>
@@ -54,7 +58,11 @@
                                                     <constraints>
                                                         <constraint firstItem="D8W-TD-Eyn" firstAttribute="height" secondItem="N07-Yd-gR9" secondAttribute="height" multiplier="0.5" id="8kH-Ge-rYC"/>
                                                         <constraint firstAttribute="bottom" secondItem="Q6y-D6-oOI" secondAttribute="bottom" id="Bc0-VO-QWC"/>
+                                                        <constraint firstItem="Cfe-Xc-31M" firstAttribute="height" secondItem="Q6y-D6-oOI" secondAttribute="height" multiplier="0.5" id="Bi8-dF-3Cg"/>
                                                         <constraint firstItem="if9-5u-hIN" firstAttribute="width" secondItem="N07-Yd-gR9" secondAttribute="width" multiplier="0.5" id="Bpq-68-gYG"/>
+                                                        <constraint firstItem="Cfe-Xc-31M" firstAttribute="leading" secondItem="Q6y-D6-oOI" secondAttribute="leading" id="DcE-RX-i3g"/>
+                                                        <constraint firstItem="Cfe-Xc-31M" firstAttribute="top" secondItem="Q6y-D6-oOI" secondAttribute="top" id="I0h-zB-kWK"/>
+                                                        <constraint firstItem="Cfe-Xc-31M" firstAttribute="width" secondItem="Q6y-D6-oOI" secondAttribute="width" multiplier="0.05" id="M0Q-Zf-0J7"/>
                                                         <constraint firstItem="D8W-TD-Eyn" firstAttribute="width" secondItem="N07-Yd-gR9" secondAttribute="width" multiplier="0.3" id="PbA-eI-3jc"/>
                                                         <constraint firstItem="Q6y-D6-oOI" firstAttribute="centerX" secondItem="N07-Yd-gR9" secondAttribute="centerX" id="YOY-lu-1xg"/>
                                                         <constraint firstItem="D8W-TD-Eyn" firstAttribute="centerY" secondItem="N07-Yd-gR9" secondAttribute="centerY" id="bag-1f-anX"/>
@@ -62,7 +70,7 @@
                                                         <constraint firstAttribute="height" constant="100" id="hdi-nL-H0c"/>
                                                         <constraint firstItem="Q6y-D6-oOI" firstAttribute="width" secondItem="N07-Yd-gR9" secondAttribute="width" id="iy4-7I-0Kw"/>
                                                         <constraint firstItem="if9-5u-hIN" firstAttribute="height" secondItem="N07-Yd-gR9" secondAttribute="height" multiplier="0.5" id="pak-gs-EVz"/>
-                                                        <constraint firstItem="Q6y-D6-oOI" firstAttribute="height" secondItem="N07-Yd-gR9" secondAttribute="height" multiplier="0.3" id="tCj-Ue-obz"/>
+                                                        <constraint firstItem="Q6y-D6-oOI" firstAttribute="height" secondItem="N07-Yd-gR9" secondAttribute="height" multiplier="0.2" id="tCj-Ue-obz"/>
                                                         <constraint firstItem="D8W-TD-Eyn" firstAttribute="centerX" secondItem="N07-Yd-gR9" secondAttribute="centerX" multiplier="1.8" id="xEa-9l-zWs"/>
                                                         <constraint firstItem="if9-5u-hIN" firstAttribute="centerX" secondItem="N07-Yd-gR9" secondAttribute="centerX" multiplier="0.6" id="yxo-bq-uNK"/>
                                                     </constraints>
@@ -79,6 +87,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="eventNameLbl" destination="if9-5u-hIN" id="hae-lD-c3m"/>
+                                            <outlet property="pontaquadrada" destination="Cfe-Xc-31M" id="mRH-Zy-IYS"/>
                                             <outlet property="progress" destination="D8W-TD-Eyn" id="Gwy-fA-IO6"/>
                                             <outlet property="progressView" destination="Q6y-D6-oOI" id="VtB-rr-7jF"/>
                                             <outlet property="view" destination="N07-Yd-gR9" id="d5I-AV-Sef"/>
@@ -120,9 +129,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="NSb-8p-cuQ">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="mII-vc-lnf">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="Hxz-fp-g7Q">
-                                <rect key="frame" x="372" y="11" width="22" height="22"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hxz-fp-g7Q">
+                                <rect key="frame" x="364" y="0.0" width="30" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="+"/>
                                 <connections>
                                     <action selector="addButtonNavigation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZ8-fn-BTY"/>
                                 </connections>
@@ -133,6 +144,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addButtonOutlet" destination="mII-vc-lnf" id="SIv-vE-Q4A"/>
                         <outlet property="addView" destination="sFb-ST-kqv" id="qdC-4l-oXW"/>
                         <outlet property="nameTextField" destination="bYt-66-cal" id="Bdl-Qb-kv6"/>
                         <outlet property="tableView" destination="dku-jg-m6Y" id="WvE-Rm-9fd"/>

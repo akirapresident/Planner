@@ -19,7 +19,11 @@ class EventosTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    
+    
+    @IBOutlet weak var pontaquadrada: UIView!
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

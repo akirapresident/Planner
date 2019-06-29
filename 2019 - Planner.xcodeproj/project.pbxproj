@@ -19,6 +19,7 @@
 		FB338E6422B2C9960087545A /* Eventos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB338E6322B2C9960087545A /* Eventos.swift */; };
 		FB338E6622B2D1FC0087545A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB338E6522B2D1FC0087545A /* Model.swift */; };
 		FB338E6822B2DC810087545A /* AddCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB338E6722B2DC810087545A /* AddCellTableViewCell.swift */; };
+		FBAF03C022C6A549005D38CC /* AddPulseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF03BF22C6A548005D38CC /* AddPulseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FB338E6322B2C9960087545A /* Eventos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eventos.swift; sourceTree = "<group>"; };
 		FB338E6522B2D1FC0087545A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FB338E6722B2DC810087545A /* AddCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCellTableViewCell.swift; sourceTree = "<group>"; };
+		FBAF03BF22C6A548005D38CC /* AddPulseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPulseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				FB338E6322B2C9960087545A /* Eventos.swift */,
 				FB338E6122B2BD720087545A /* EventosPaiTableViewController.swift */,
 				FB338E2E22B2AD080087545A /* ViewController.swift */,
+				FBAF03BF22C6A548005D38CC /* AddPulseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBAF03C022C6A549005D38CC /* AddPulseViewController.swift in Sources */,
 				FB338E2F22B2AD080087545A /* ViewController.swift in Sources */,
 				FB338E2D22B2AD080087545A /* AppDelegate.swift in Sources */,
 				FB338E6022B2B7B40087545A /* EventosTableViewCell.swift in Sources */,
@@ -483,7 +487,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "shawlin.-019---Planner";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akira.tasker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,7 +505,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "shawlin.-019---Planner";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akira.tasker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
